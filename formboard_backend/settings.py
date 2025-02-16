@@ -72,9 +72,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'formboard_backend.wsgi.application'
 
 # Database configuration (Use PostgreSQL for production)
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'sqlite:///db.sqlite3'))
-}
+#DATABASES = {
+#    'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'sqlite:///db.sqlite3'))
+#}
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
