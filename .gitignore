@@ -173,3 +173,4 @@ cython_debug/
 
 form_email_sys/
 templates/
+.env
