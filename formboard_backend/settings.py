@@ -52,6 +52,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'formboard_backend.urls'
 
+DATABASES = {
+    'default': dj_database_url.config(conn_max_age=600)
+}
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
