@@ -31,9 +31,9 @@ EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL', 'False') == 'True'
 
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///db.sqlite3")  # Default to SQLite
 
-DATABASES = {
-    "default": dj_database_url.config(default=DATABASE_URL)
-}
+#DATABASES = {
+#    "default": dj_database_url.config(default=DATABASE_URL)
+#}
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
