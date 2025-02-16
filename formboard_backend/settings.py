@@ -29,7 +29,9 @@ EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL', 'False') == 'True'
 
 # Database configuration (Use PostgreSQL for production)
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(
+        default='sqlite:///db.sqlite3'  # Fallback for local development
+    )
 }
 
 # Static files (CSS, JavaScript, Images)
