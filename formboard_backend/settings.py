@@ -55,12 +55,12 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'formboard_backend.urls'
 
 
+
+
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv("DATABASE_URL"),  # Read from environment variables
-        conn_max_age=600,
-    )
+    "default": dj_database_url.config(env="DATABASE_URL", conn_max_age=600, ssl_require=True)
 }
+
 
 TEMPLATES = [
     {
